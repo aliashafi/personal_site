@@ -1,0 +1,46 @@
+
+.top-col{
+    display: flex;
+    justify-content: center;
+    height: 75vh;
+    background-color: #f5f5f5;
+    padding-left: 26px;
+}
+
+.header-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.name{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 50px;
+    padding-left: 41px;
+    /* font-family: 'Poiret One', cursive; */
+    margin: 0px;
+}
+
+.name-caption{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    color: #BE90D4;
+    margin: 0px;
+
+}
+
+.top-col__img_container{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 50%;
+    top: 200px;
+}
+
+.head-shot{
+    display: flex;
+    margin: -112px auto;
+    height: 152%;
+    width: auto;
+}

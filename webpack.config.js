@@ -11,34 +11,28 @@ module.exports = {
         filename: "bundle.js",
     },
     module: {
-            rules: [
-                {
-                    test: /\.css$/,
-                    loader: 'style-loader!css-loader'
-                },
-                {
-                    test: /\.png$/,
-                    loader: 'url-loader?limit=100000&minetype=image/png'
-                },
-                {
-                    test: /\.jpg/,
-                    loader: 'file-loader'
-                },
-                {
-                    test: /\.jsx?/,
-                    include: SRC_DIR,
+        rules: [
+            {
+                test: /\.css$/,
+                loader: 'style-loader!css-loader'
+            },
+            {
+                test: [/\.jsx?$/],
+                exclude: /(node_modules)/,
+                use: {
                     loader: 'babel-loader',
                     query: {
                         presets: ['@babel/env', '@babel/react']
                     }
-                }
-            ]
-        },
-        plugins: [
-            new webpack.DefinePlugin({
-                'process.env.NODE_ENV': JSON.stringify('production')
-            })
+                },
+                
+            },
+            {
+                test: /\.jpg/,
+                loader: 'file-loader'
+            },
         ],
+    },
     devtool: 'source-map',
     resolve: {
         extensions: ['.js', '.jsx', '*']
