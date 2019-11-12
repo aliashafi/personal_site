@@ -1,5 +1,7 @@
 import React from 'react';
 import NavBar from './nav_bar'
+import Projects from './projects'
+import AboutMe from './about_me'
 import photo from '../content/edit_alia.jpg'
 import '../css/main-page.css'
 class MainPage extends React.Component {
@@ -14,13 +16,15 @@ class MainPage extends React.Component {
 
                 <div className="top-col">
                     <div className="header-container">
-                        <h1 className="name">ALIA SHAFI</h1>
-                        <h3 className="name-caption"> Software Developer, Athlete, Science Nerd</h3>
-                    </div>
-                    <div className="top-col__img_container">
-                        <img className="head-shot" src={photo} alt=""/>
+                        <div className="name-header">
+                            <h1 className="name">ALIA SHAFI</h1>
+                            <h3 className="name-caption"> FULL STACK SOFTWARE DEVELOPER & ATHLETE</h3>
+                        </div>
                     </div>
                 </div>
+                <AboutMe/>
+
+                <Projects/>
             </div>
         )
     }
