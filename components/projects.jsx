@@ -17,16 +17,22 @@ class Projects extends React.Component {
           </div>
           
           <div className="projects-about">
-            <div className="project-title-container">
-              <div className="logo">
-                <img src={logoSummit} alt=""/>
-              </div>
-            </div>
-            <div className="projects-caption"> A strava inspired running/cycling application</div>
+            <div className="project-title-container"></div>
+            <div className="projects-caption"> A strava inspired running/cycling application built with Ruby on Rails framework interfacing with 
+            a postgreSQL database and a React/Redux frontend. The application includes custom GPX parsing algorithms, real time route creation feature, and
+            interactive analysis with several statistical features for users to analyze workout.
+          </div>
 
-            <div>Live Link</div>
-            <div>Github</div>
-            <div>More About the Project</div>
+          </div>
+          <div className="logo-container">
+            <div className="logo">
+              <img src={logoSummit} alt="" />
+            </div>
+            <div className="project-links">
+              <div>Live Link</div>
+              <div>Github</div>
+              <div>More About the Project</div>
+            </div>
           </div>
         </div>
       </div>
