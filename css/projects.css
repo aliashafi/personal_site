@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     padding: 30px;
-    justify-content: space-evenly;
+    justify-content:  center;
     background-color:#ddd7de;
     position: relative;
     /* box-shadow: 0px 8px 24px rgba(13,13,18,0.16); */
@@ -31,14 +31,21 @@
 }
 
 .logo >img{
+  filter: grayscale(100%);
   width: 141px;
   position: absolute;
-  right: 100px;
+  right: 6vw;
   top: 71px;
+}
+
+.logo >img:hover{
+  filter: grayscale(0%);
 }
 
 .projects-title, .projects-caption{
     font-family: 'Poiret One', cursive;
+    font-weight: bolder;
+    font-size: 18px;
 }
 
 .project-title-container{
@@ -48,38 +55,41 @@
 .projects-about{
   background-color: white;
   position: absolute;
-  width: 500px;
-  top: 181px;
-  left: 750px;
+  width: 43vw;
+  top: 170px;
+  left: 46vw;
   padding: 40px;
   box-shadow: 0px 8px 24px rgba(13,13,18,0.16);
 }
 
 .project-links{
   display: flex;
-  /* width: 468px; */
-  justify-content: flex-end;
+  /* width: 384px; */
+  margin-left: 12px;
+  justify-content: space-between;
 
 }
 .project-links > a{
   margin: 12px;
+  
 }
 
 .logo-container{
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  width: 42vw;
 }
 
 .fab{
-  font-size: 40px;
+  font-size: 27px;
 }
 .fab:hover, .fas:hover{
   color: grey;
 }
 
 .fas{
-  font-size: 36px;
+  font-size: 27px;
 }
 
 .tools-used{
@@ -90,4 +100,26 @@
   font-family: 'Poiret One', cursive;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.icons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.icons > a{
+  margin-left: 20px;
+}
+
+.fa-chevron-right{
+  font-size: 17px;
+  margin-right: 7px;
+  background: -webkit-linear-gradient(#000428, #004e92);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skills > div{
+  margin-top: 12px;
 }

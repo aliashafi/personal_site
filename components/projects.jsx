@@ -32,18 +32,26 @@ class Projects extends React.Component {
             <div className="logo">
               <img src={logoSummit} alt="" />
             </div>
-            {/* <div className="tools-used">
-              <div>JavaScript</div>
-              <div>React/Redux</div>
-              <div>Ruby on Rails</div>
-              <div>postgreSQL</div>
-              <div>MapBox</div>
-              <div>Webpack</div>
-              <div>AWS</div>
-            </div> */}
             <div className="project-links">
-              <a href="https://summit-fsp.herokuapp.com/"><i class="fas fa-share-square"></i></a>
-              <a href="https://github.com/aliashafi/summit"><i class="fab fa-github"></i></a>
+              <div className="tools-used">
+                <div className="skills">
+                  <div><i class="fas fa-chevron-right"></i>JavaScript</div>
+                  <div><i class="fas fa-chevron-right"></i>React/Redux</div>
+                  <div><i class="fas fa-chevron-right"></i>Ruby on Rails</div>
+                </div>
+                <div className="skills">
+                  <div><i class="fas fa-chevron-right"></i>postgreSQL</div>
+                  <div><i class="fas fa-chevron-right"></i>MapBox</div>
+                  <div><i class="fas fa-chevron-right"></i>Webpack</div>
+                </div>
+                <div className="skills">
+                  <div><i class="fas fa-chevron-right"></i>AWS</div>
+                </div>
+              </div>
+              <div class="icons">
+                <a href="https://summit-fsp.herokuapp.com/"><i class="fas fa-share-square"></i></a>
+                <a href="https://github.com/aliashafi/summit"><i class="fab fa-github"></i></a>
+              </div>
             </div>
           </div>
         </div>
